@@ -1,0 +1,94 @@
+{% extends "layout.html" %} 
+{% block protein %}
+    active
+{% endblock protein %}
+{% block header %} 
+    <h1>Protein</h1>
+{% endblock header %}
+{% block content %}
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container text-center">
+            <h1>"How will I get enough protein on a vegan diet?"</h1>
+            <hr>
+            <br>
+            <h2>A question many of us asked when we first transitioned to a plant based only diet.</h2>
+            <br>
+            <h1>Have no fear!</h1>
+            <img class="img-fluid" id="meme" src="{{url_for('static', filename='protein/meme-protein.jpg')}}" alt="meme" width="50%" height="auto">
+            <hr>
+            <h2>Silly jokes aside, every plant has all essential amino acids our body needs.</h2>
+            <br>
+            <h2>Truth is, not all plants have a high amount of protein.</h2>
+            <hr>
+            <h2>We listed down below top 5 sources of delicious plant protein to help you on your journey to become a healthy and strong vegan!</h2>
+            <h3>Psst... You probably already eat and like all of them.</h3>
+        </div>
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='protein/oats.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Oats</h5>
+                            <p class="card-text">Besides being a great meal to start your morning, oats are filled with healthy micro and macro nutrients with a good amount of protein.
+                                <br><strong>11.1g of protein per 100g</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='protein/beans.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beans</h5>
+                            <p class="card-text">Probably our favourite plant protein source, can be so easily incorporated into a lot of recipes and are always so delicious.
+                                <br><strong>7.4g of protein per 100g</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='protein/lentils.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Lentils</h5>
+                            <p class="card-text">Great source of potassium and very good for your heart. Lentils come in various colors and will make sure you enjoy every bite of them.
+                                <br><strong>9.1g of protein per 100g</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='protein/chickpeas.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Chickpeas</h5>
+                            <p class="card-text">They have a weird smell and look funny, but are very good for your tummy. Don't forget, you can make hummus with them.
+                                <br><strong>10.7g of protein per 100g</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='protein/tofu.jpg')}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tofu</h5>
+                            <p class="card-text">While sometimes unsure for newcomers, tofu can easily be made delicious with few ingredients and is packed with protein.
+                                <br><strong>16.63g of protein per 100g</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>We have <a href="{{url_for('recipes')}}">recipes</a> which include all of these amazing protein sources.</h2>
+        </div>
+    </section>
+{% endblock content %}

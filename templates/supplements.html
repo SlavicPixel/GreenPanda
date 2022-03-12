@@ -1,0 +1,83 @@
+{% extends "layout.html" %} 
+{% block supplements %}
+    active
+{% endblock supplements %}
+{% block header %} 
+    <h1>Supplements</h1>
+{% endblock header %}
+{% block content %}
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container text-center">
+            <h2>When we think of supplements, the first thought that comes to mind are probably protein powders, multivitamin capsules and similar types of supplements.</h2>
+            <hr>
+            <h2>Today, we'll rather look at four whole foods which you can treat as your daily supplements and one which is not a whole food, but also very important.</h2>
+            <h3></h3>
+        </div>
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='supplements/flax.jpg')}}" alt="supplement1">
+                        <div class="card-body">
+                            <h5 class="card-title">Flax Seed</h5>
+                            <p class="card-text">Flax seed is very rich in <strong>Omega-3 fatty acids</strong>. Omega-3 fatty acids modulate a lot of processes in a human body, including the brain, visual development, inflammatory reactions, cancer growth and many others. 
+                                Make sure to get <strong>grounded</strong> flax seeds or <strong>grind</strong> them yourself because otherwise, your body won't be able to absorb it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='supplements/brazilnut.jpg')}}" alt="supplement2">
+                        <div class="card-body">
+                            <h5 class="card-title">Brazil Nut</h5>
+                            <p class="card-text">Brazil nuts are a great source of <strong>selenium</strong>. <strong>Selenium</strong> is very important for our glutathione which plays important roles in antioxidant defense. Be careful,
+                                having too much selenium every day can be toxic for our body. Eating two Brazil nuts or even just one a day is more than enough to hit your selenium RDI (Reference Daily Intake). 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='supplements/turmeric.jpg')}}" alt="supplement3">
+                        <div class="card-body">
+                            <h5 class="card-title">Turmeric</h5>
+                            <p class="card-text">The active component in turmeric we'll be looking at is <strong>curcumin</strong>. <strong>Curcumin</strong> is a powerful <strong>anti-inflammatory</strong> and <strong>antioxidant</strong>. It will easily
+                                help you with muscle inflammation after a hard exercise or other physical activities. It's important to note that you should consume turmeric with <strong>black pepper</strong> since it greatly helps our bodies to absorb curcumin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='supplements/dulse.jpg')}}" alt="supplement4">
+                        <div class="card-body">
+                            <h5 class="card-title">Seaweed</h5>
+                            <p class="card-text">Seaweed is a great source of a lot of minerals, but the important one is <strong>iodine</strong>. <strong>Iodine</strong> is essential for our <strong>thyroid</strong> and to keep its hormones in balance.
+                                <strong>Dulse</strong> seaweed is the best option since it has a higher amount of iodine compared to some other seaweeds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="card" >
+                        <img class="card-img-top" src="{{url_for('static', filename='supplements/b12.jpg')}}" alt="supplement5">
+                        <div class="card-body">
+                            <h5 class="card-title">Vitamin B12</h5>
+                            <p class="card-text">We can't talk about supplements without mentioning <strong>vitamin B12</strong>. B12 has a very important role in <strong>function</strong> and <strong>development</strong> of brain and nerve cells. It is also needed to form red blood cells
+                                and DNA. B12 may also improve mood and symptoms of depression. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

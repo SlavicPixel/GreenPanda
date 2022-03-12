@@ -1,4 +1,48 @@
 {% extends "layout.html" %} 
+{% block home %}
+    active
+{% endblock home %}
+{% block header %} 
+    <p class="masthead-subheading font-weight-light mb-0">Health - Knowledge - Vegan</p>
+{% endblock header %}
 {% block content %}
-    <h1>Home Page</h1>
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <div class="container text-center">
+                <h2>Ready to make healthy changes in your life?</h2>
+                <h3>Not sure where to start?</h3>
+                <br>
+                <h2>Take a look down below to get yourself started on a road to a healthier life filled with compassion!</h2>
+            </div>
+            <div class="divider-custom divider-green">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto">
+                        <a href="{{url_for('recipes')}}"><img class="img-fluid" src="{{url_for('static', filename='home/recipes.jpg')}}" alt="recipes" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                       <a href="{{url_for('exercises')}}"><img class="img-fluid" src="{{url_for('static', filename='home/exercises.jpg')}}" alt="excercise" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <a href="{{url_for('protein')}}"><img class="img-fluid" src="{{url_for('static', filename='home/protein.jpg')}}" alt="excercise" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <a href="{{url_for('supplements')}}"><img class="img-fluid" src="{{url_for('static', filename='home/supplements.jpg')}}" alt="excercise" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

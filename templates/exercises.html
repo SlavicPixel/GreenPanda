@@ -1,0 +1,29 @@
+{% extends "layout.html" %} 
+{% block excercises %}
+    active
+{% endblock excercises %}
+{% block header %} 
+    <h1>Exercises</h1>
+{% endblock header %}
+{% block content %}
+<section>
+    <div class="container align-items-center text-center">
+            <br>
+            <h1>A great way to start your day is with an exercise.</h1>
+            <br>
+            <h2>Besides being healthy for our bodies, exercise will elevate your mood and give you a kickstart for the challenges that await you.</h2>
+            <br>
+            <h3>Take a look down below at our Morning Exercise</h3>
+            <div class="divider-custom divider-green">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <img src="{{url_for('static', filename='excercises/excercises.jpg')}}" class="img-fluid" alt="morning_exercise" height="auto">
+            <br><br>
+            <h1>Do the routine 3 times or as many as you want!</h1>
+            <h2>Even doing 1 routine is a great start!</h2>
+            <br>
+    </div>
+</section>
+{% endblock content %}

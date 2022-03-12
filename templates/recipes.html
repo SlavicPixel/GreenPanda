@@ -1,0 +1,204 @@
+{% extends "layout.html" %} 
+{% block recipes %}
+    active
+{% endblock recipes %}
+{% block header %} 
+    <h1>Recipes</h1>
+{% endblock header %}
+{% block content %}
+    <div class="container align-items-center text-center">
+        <br>
+        <h1>Cooking vegan and especially healthy can seem troublesome at first, but don't worry.</h1>
+        <h2>We prepared for you several easy and healthy whole food vegan recipe ideas we're sure you'll like!</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lDPV4Enoxxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <h1>Breakfast recipes</h1>
+        <hr>
+    </div>
+    <div class="container align-items-center">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card" >
+                    <img class="card-img-top" src="{{url_for('static', filename='recipes/oats.jpg')}}" alt="oatmeal">
+                    <div class="card-body ">
+                        <h5 class="card-title">Easy Oatmeal</h5>
+                        <ul>
+                            <li>1 cup of oats</li>
+                            <li>1 banana</li>
+                            <li>1 medjool date</li>
+                            <li>2 tsp cinnamon</li>
+                        </ul>  
+                        <p class="card-text"><strong>Method:</strong></p>
+                        <ol>
+                            <li>Blend banana and date with some water and cinnamon in a blender.</li>
+                            <li>Cook oats in the blended liquid until done.</li>
+                            <li>Serve hot with your favorite oatmeal toppings.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card" >
+                    <img class="card-img-top" src="{{url_for('static', filename='recipes/scramble.jpg')}}" alt="tofu scramble">
+                    <div class="card-body">
+                        <h5 class="card-title">Tofu Scramble</h5>
+                        <ul>
+                            <li>1 firm tofu (~200g)</li>
+                            <li>1 medium onion</li>
+                            <li>1 medium red pepper</li>
+                            <li>1/2 medium zucchini</li>
+                            <li>1 tbsp nutritional yeast</li>
+                            <li>1/2 tsp garlic powder</li>
+                            <li>1/2 tsp cumin</li>
+                            <li>1/2 tsp turmeric</li>
+                            <li>1/4 tsp chili powder</li>
+                        </ul>
+                        <p class="card-text"><strong>Method:</strong></p>
+                            <ol>
+                                <li>Crumble tofu in a bowl and add the spices, mix well.</li>
+                                <li>Saute chopped vegetables in a frying pan on medium heat until tender.</li>
+                                <li>Add crumbled tofu and mix it with vegetables.</li>
+                                <li>Saute until tofu is warm and serve it with some toast or any sidings you like.</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container align-items-center text-center">
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <h1>Lunch recipes</h1>
+        <hr>
+    </div>
+    <div class="container align-items-center">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card" >
+                    <img class="card-img-top" src="{{url_for('static', filename='recipes/tofu.jpg')}}" alt="baked tofu">
+                    <div class="card-body">
+                        <h5 class="card-title">Baked Tofu</h5>
+                        <ul>
+                            <li>1 extra firm tofu</li>
+                        </ul>
+                        <p class="card-text"><strong>Marinade:</strong></p>
+                        <ul>
+                            <li>1 tbsp mustard</li>
+                            <li>1 tbsp tahini</li>
+                            <li>2 tsp soy sauce</li>
+                            <li>1/2 tsp garlic powder</li>
+                            <li>1/2 tsp onion powder</li>
+                            <li>1/4 tsp turmeric powder</li>
+                            <li>1/4 tsp black pepper (optional)</li>
+                        </ul>
+                        <p class="card-text"><strong>Method:</strong></p>
+                            <ol>
+                                <li>Press tofu to release as much water as possible and slice it into strips or slices.</li>
+                                <li>Put the tofu in the marinade. If you want tofu to soak as much marinade as it can, leave it in fridge overnight or bake it straight away.</li>
+                                <li>Place the tofu on a baking sheet and bake at 175°C for 25 minutes.</li>
+                                <li>Serve with fresh veggies or any other sidings you like.</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card" >
+                    <img class="card-img-top" src="{{url_for('static', filename='recipes/burrito.jpg')}}" alt="burritos">
+                    <div class="card-body">
+                        <h5 class="card-title">Bean Burrito</h5>
+                        <ul>
+                            <li>250g cooked red kidney beans </li>
+                            <li>1 red or white onion, chopped in slices</li>
+                            <li>2 medium bell peppers (mix colors if you want), chopped in slices</li>
+                            <li>2 tortillas</li>
+                            <li>100g cooked rices (optional)</li>
+                            <li>1 tbsp salsa</li>
+                            <li>1 tsp garlic powder</li>
+                            <li>1 tsp onion powder</li>
+                            <li>1/2 tsp chilli powder</li>
+                            <li>1/2 tsp cumin powder</li>
+                        </ul>
+                        <p class="card-text"><strong>Method:</strong></p>
+                            <ol>
+                                <li>Saute the veggies in a frying pan on medium heat, add the spices and saute until onion becomes a bit transparent.</li>
+                                <li>Put veggies to the side of the frying pan and add beans to the other side.</li>
+                                <li>Add spices and salsa to the beans and saute for 3-5 minutes on medium heat.</li>
+                                <li>Place beans, veggies and rice on a tortilla to assemble the burrito.</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container align-items-center text-center">
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <h1>Dinner recipes</h1>
+        <hr>
+    </div>
+    <div class="container align-items-center">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card" >
+                    <img class="card-img-top" src="{{url_for('static', filename='recipes/pasta.jpg')}}" alt="lentil pasta sauce">
+                    <div class="card-body">
+                        <h5 class="card-title">Lentil Pasta Sauce</h5>
+                        <ul>
+                            <li>2 garlic cloves</li>
+                            <li>1 medium onion, diced</li>
+                            <li>1 medium carrot, grated</li>
+                            <li>1/2 medium red bell pepper, chopped</li>
+                            <li>1/2 medium zucchini, chopped (optional)</li>
+                            <li>250g cooked lentils</li>
+                            <li>500ml tomato sauce</li>
+                        </ul>
+                        <p class="card-text"><strong>Method:</strong></p>
+                            <ol>
+                                <li>Saute onion, red bell pepper, carrot and zucchini on medium-high heat for 5 minutes or less.</li>
+                                <li>Add lentils, garlic, tomato sauce and simmer together for 10 minutes on medium heat.</li>
+                                <li>Serve with your favourite pasta.</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card" >
+                    <img class="card-img-top" src="{{url_for('static', filename='recipes/chickpeas-lentils.jpg')}}" alt="chickpeas-lentils mix">
+                    <div class="card-body">
+                        <h5 class="card-title">Chickpea - Lentil Mix up</h5>
+                        <ul>
+                            <li>250g cooked chickpeas</li>
+                            <li>250g cooked lentils</li>
+                            <li>100g cooked green peas</li>
+                            <li>1 white onion, chopped</li>
+                            <li>1 tbsp vegetable stock (optional)</li>
+                            <li>1 tbsp soy sauce</li>
+                            <li>1 tsp garlic powder</li>
+                            <li>1 tsp onion powder</li>
+                        </ul>
+                        <p class="card-text"><strong>Method:</strong></p>
+                            <ol>
+                                <li>Add onion and chickpeas in frying pan with vegetable stock, saute for 5 minutes on medium heat.</li>
+                                <li>Put lentils in the pan and mix. Add the soy sauce and spices and saute until lentils start to crumble a bit.</li>
+                                <li>Add green peas and remove the frying pan from the stove after 1 minute.</li>
+                                <li>Serve it with rice, quinoa or any other siding you like.</li>
+                            </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock content %}

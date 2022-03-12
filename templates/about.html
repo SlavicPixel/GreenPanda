@@ -1,4 +1,50 @@
 {% extends "layout.html" %} 
+{% block about %}
+    active
+{% endblock about %}
+{% block header %} 
+    <h1>Who are we?</h1>
+{% endblock header %}
 {% block content %}
-    <h1>About Page</h1>
+    <div class="container text-center">
+        <br>
+        <h2>Green Panda is a non-profit vegan organization which thrives on helping people transition to a healthier life.</h2>
+        <br>
+        <h2>We believe a whole food plant based diet is a great way for people to enter a healthier lifestyle while also learning about exciting new recipes.</h2>
+        <hr>
+        <h1>FAQ</h1>
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-seedling"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <h2>Q: "Why are you doing this?"</h2>
+        <p class="answer">A: We are aware the transition to a plant based diet can be difficult for some people and we want to help out as much as we can to make that transition as easy as it can be.</p>
+        <br>
+        <h2>Q: "Why plant based diet exactly and not other diets?"</h2>
+        <p class="answer">A: While there are other healthy diets, plant based diet is one of the healthiest and it is also the best one for our planet and animals.</p>
+        <br>
+        <h2>Q: "I hear many people get sick from plant based diet, should I be worried?"</h2>
+        <p class="answer">
+            A: While we can't speak for everyone, in a lot of cases, people tend to get sick due to an improper diet filled with processed food. Just because something is plant based, it doesn't automatically make it healthy, e.g. vegan meats. 
+            A proper whole food diet will surely get the job done, but if you feel unwell, make sure to check in with your doctor. Not all bodies are the same.
+        </p>
+        <br>
+        <h2>Q: "Should I stay away from processed food?"</h2>
+        <p class="answer">A: Of course not! While processed food is unhealthy, having it once in a while shouldn't pose a problem. Just make sure most of your meals are based on whole food ingredients.</p>
+        <br>
+        <h2>Q: "Why the name Green Panda?"</h2>
+        <p class="answer">A: The original idea was to name the organization "Green Dragon", but our lead graphics designer quickly realized he won't be able to draw a dragon in Inkscape as our logo, so we decided to name the organization "Green Panda". 
+             Also, pandas are, without a doubt, way cuter. &#128060
+        </p>
+        <img class="img-fluid" id="panda" src="{{url_for('static', filename='about/panda.jpg')}}" alt="panda" width="75%" height="auto">
+        <br><br>
+        <div class="divider-custom divider-green">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fab fa-github"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <h2>Check out the source code on <a href="https://github.com/SlavicPixel/mms-zavrsni" target="_blank" rel="noopener noreferrer">Github</a>.</h2>
+        <br>
+    </div>
 {% endblock content %}
