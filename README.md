@@ -5,6 +5,7 @@
 Ova stranica koristi [Flask-git](https://github.com/pallets/flask) framework na bazi Pythona. Nudi mnoge mogućnosti koje olakšavaju izradu stranica i web aplikacija. Važno je za napomenut da upravo zbog toga se stranice ne mogu gledati lokalno bez da se framework koristi te su ispod ispisane upute kako pokrenuti stranicu lokalno.
 
 ## Upute za pokrenuti lokalni Flask server (Windows)
+[ZIP arhiva stranice](https://github.com/SlavicPixel/mms-zavrsni/archive/refs/heads/main.zip)
 1. Potrebno je instralirati [Python3](https://www.python.org/downloads/)
 2. Otvoriti Command Prompt te navigirati u root folder stranice komandom `cd mms-zavrsni-main`<br /> npr. `C:\Users\User>cd Downloads\mms-zavrsni-main`
 3. Unutar foldera napraviti virtual environment `py -3 -m venv venv`
