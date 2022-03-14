@@ -2,6 +2,8 @@
 <img src="https://raw.github.com/SlavicPixel/mms-zavrsni/master/static/green_panda_nav.svg" alt="img" width="75%">
 
 ## O stranici
+Web sjedište za izmišljenu organizaciju "Green Panda".
+
 Ova stranica koristi [Flask-git](https://github.com/pallets/flask) framework na bazi Pythona. Nudi mnoge mogućnosti koje olakšavaju izradu stranica i web aplikacija. Važno je za napomenut da upravo zbog toga se stranice ne mogu gledati lokalno bez da se framework koristi te su ispod ispisane upute kako pokrenuti stranicu lokalno.
 
 ## Upute za pokrenuti lokalni Flask server (Windows)
